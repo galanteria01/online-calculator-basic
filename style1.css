@@ -1,0 +1,15 @@
+body{
+    box-sizing: border-box;
+}
+button{
+    background-color: #4CAF50;
+    height: 40px;
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+
+}
+#res-viewer{
+    width: 100px;
+}
