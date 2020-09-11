@@ -10,3 +10,6 @@ function mul(){
 function div(){
 	return
 }
+function clear(){
+	document.getElementById('clear_btn').value = '';
+}
