@@ -7,72 +7,74 @@
     <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
-    <div class="head">
-        <div id="heading-at top">Calculator by galanteria01</div>
-    </div>
-    <div id="res-viewer">
-        <input type="number">
-    </div>
-    <div class="calc-struc">
-        <div id="num-one" class="button1">
-            <button class="btn">1</button>
+    <div class="container">
+        <div class="head">
+            <div id="heading-at top">Calculator by galanteria01</div>
         </div>
+        <div id="res-viewer">
+            <input type="text" placeholder="0"> 
+        </div>
+        <form class="calc-struc">
+            <div id="num-one" class="button1">
+                <button class="btn" value="1" id="b1">1</button>
+            </div>
 
-        <div id="num-two" class="button1">
-            <button class="btn">2</button>
-        </div>
+            <div id="num-two" class="button1">
+                <button class="btn" value="2" id="b2">2</button>
+            </div>
 
-        <div id="num-three" class="button1">
-            <button class="btn">3</button>
-        </div>
-        
-        <div id="num-four" class="button2">
-            <button class="btn">4</button>
-        </div>
+            <div id="num-three" class="button1">
+                <button class="btn" value="3" id="b3">3</button>
+            </div>
+            
+            <div id="num-four" class="button2">
+                <button class="btn" value="4" id="b4">4</button>
+            </div>
 
-        <div id="num-five" class="button2">
-            <button class="btn">5</button>
-        </div>
+            <div id="num-five" class="button2">
+                <button class="btn" value="5" id="b5">5</button>
+            </div>
 
-        <div id="num-six" class="button2">
-            <button class="btn">6</button>
-        </div>
-        
-        <div id="num-seven" class="button3">
-            <button class="btn">7</button>
-        </div>
+            <div id="num-six" class="button2">
+                <button class="btn" value="6" id="b6">6</button>
+            </div>
+            
+            <div id="num-seven" class="button3">
+                <button class="btn" value="7"  id="b7">7</button>
+            </div>
 
-        <div id="num-eight" class="button3">
-            <button class="btn">8</button>
-        </div>
+            <div id="num-eight" class="button3">
+                <button class="btn" value="8" id="b8">8</button>
+            </div>
 
-        <div id="num-nine" class="button3">
-            <button class="btn">9</button>
-        </div>
+            <div id="num-nine" class="button3">
+                <button class="btn" value="9" id="b9">9</button>
+            </div>
 
-        <div id="num-zero" class="button">
-            <button class="btn">0</button>
-        </div>
+            <div id="num-zero" class="button">
+                <button class="btn" value="0" id="b0">0</button>
+            </div>
 
-        <div id="sign-plus" class="button">
-            <button class="key-operater">+</button>
-        </div>
+            <div id="sign-plus" class="button">
+                <button class="key-operater" id="b_plus"  onclick="add">+</button>
+            </div>
 
-        <div id="sign-sub" class="button">
-            <button class="key-operater">-</button>
-        </div>
+            <div id="sign-sub" class="button">
+                <button class="key-operater" id="b_sub" onclick="sub">-</button>
+            </div>
 
-        <div id="sign-mul" class="button">
-            <button class="key-operater">x</button>
-        </div>
+            <div id="sign-mul" class="button">
+                <button class="key-operater" id="b_mul" onclick="mul">x</button>
+            </div>
 
-        <div id="sign-div" class="button">
-            <button class="key-operater">/</button>
-        </div>
+            <div id="sign-div" class="button">
+                <button class="key-operater" id="b_div" onclick="div">/</button>
+            </div>
 
-        <div id="num-equals" class="button">
-            <button class="key-operater">=</button>
-        </div>
+            <div id="num-equals" class="button">
+                <button class="key-operater" id="b_equals" onclick="equals">=</button>
+            </div>
+        </form>
     </div>
 
 
