@@ -1,15 +1,4 @@
-function add(){
-	return
-}
-function sub(){
-	return
-}
-function mul(){
-	return
-}
-function div(){
-	return
-}
-function clear(){
-	document.getElementById('clear_btn').value = '';
+
+function them(val){
+	document.getElementById("edu").value += val
 }
