@@ -18,6 +18,11 @@ class Calc extends Component{
         this.setState({current: this.state.current+symbol})
 
     }
+    equals = () =>{
+        
+    }
+
+    
 
     render(){
         const buttons = [
@@ -37,7 +42,7 @@ class Calc extends Component{
             {symbol: '+',cols: 1, action: this.addToCurrent},
             {symbol: '0',cols: 2, action: this.addToCurrent},
             {symbol: '.',cols: 1, action: this.addToCurrent},
-            {symbol: '=',cols: 1, action: this.addToCurrent},
+            {symbol: '=',cols: 1, action: this.equals},
         ];
         return( 
         <div className="Calc">
