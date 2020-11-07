@@ -9,11 +9,9 @@ class Calc extends Component{
             previous: [],
             nextIsReset: false
         }
-
     }
     reset = () => {
         this.setState({current: '0',previous:[], nextIsReset:false});
-
     }
     addToCurrent = (symbol) =>{
         if(["/","-","+","*"].indexOf(symbol)>-1){
@@ -29,22 +27,14 @@ class Calc extends Component{
                 this.setState({current: this.state.current+symbol})
             }
         }
-
     }
     equals = (symbol) =>{
         let {current,previous,nextIsReset} = this.state;
         if(previous.length>0){
             current = eval(String(previous[previous.length-1] + current));
             this.setState({current,previous,nextIsReset:true});
-
-
         }
-
-
     }
-
-    
-
     render(){
         const buttons = [
             {symbol: 'C',cols: 3, action: this.reset},
@@ -77,7 +67,5 @@ class Calc extends Component{
             })}
         </div>);
     };
-
 }
-
 export default Calc

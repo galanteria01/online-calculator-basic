@@ -1,6 +1,6 @@
 import React ,{Component} from 'react';
 
-class button extends Component{
+class Button extends Component{
     render(){
         return (
             <div className = {`column-${this.props.cols}`}>
@@ -9,4 +9,4 @@ class button extends Component{
         )
     }
 }
-export default button;
+export default Button;
